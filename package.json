@@ -19,5 +19,8 @@
   "homepage": "https://github.com/PallaviKulkarni712/playwright-tae-demo#readme",
   "devDependencies": {
     "@playwright/test": "^1.54.1"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0"
   }
 }
