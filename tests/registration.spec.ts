@@ -1,17 +1,5 @@
 import { test, expect } from '@playwright/test';
-// Update the import path below to the correct location of registration.page.ts
-// Update the path below to the actual location of registration.page.ts
-// Update the path below to the actual location of registration.page.ts
-// Example: import RegisterPage from '../src/pages/registration.page';
-// Make sure the file exists at the specified path and is named correctly (registration.page.ts)
-// Update the path below to the actual location of registration.page.ts
-// Example: import RegisterPage from '../../src/pages/registration.page';
-// Make sure the file exists at the specified path and is named correctly (registration.page.ts)
-import RegisterPage from '../../src/pages/registration.page';
-// Example: import RegisterPage from '../../../src/pages/registration.page';
-// Make sure the file exists at the specified path and is named correctly (registration.page.ts)
-// If the file is actually located at a different path, update the import accordingly.
-// Example: import RegisterPage from '../../src/pages/registration.page';
+import RegisterPage from '../pages/registration.page';
 import { faker } from '@faker-js/faker';
 
 
@@ -155,4 +143,4 @@ test.describe('Registrierungsprozess', () => {
   await expect(page.locator('text=Bitte ein Passwort eingeben')).toBeVisible();
   });
 
-});
+})
