@@ -12,7 +12,7 @@ test.describe('Registrierungsprozess', () => {
     await page.context().clearCookies();
   });
 
-test('Open Cooffeeshop page and verify title', async ({ page }) => {
+test('Open Cooffeeshop page and verify title is same', async ({ page }) => {
     //Open URL
     await page.goto('https://marina-abr.github.io/StaticCoffee/index.html');
    //verify the title of the page  
