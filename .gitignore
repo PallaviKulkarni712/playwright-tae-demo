@@ -146,3 +146,35 @@ test-results/.last-run.json
 test-results/.last-run.json
 .gitignore
 test-results/.last-run.json
+playwright-report/data/1cf66ea5030c12efa7b600358e4b9f93dcae05ef.md
+.github/workflows/playwright 1.yml
+playwright-report/data/35d7a4697cc7cdb87fa96d8350ba1c14330f7fed.zip
+playwright-report/trace/codeMirrorModule.C3UTv-Ge.css
+playwright-report/trace/assets/codeMirrorModule-3kZ8GVgK.js
+playwright-report/trace/xtermModule.Beg8tuEN.css
+playwright-report/trace/uiMode.html
+playwright-report/trace/uiMode.BijnIl3L.js
+playwright-report/trace/uiMode.BatfzHMG.css
+playwright-report/trace/sw.bundle.js
+playwright-report/trace/snapshot.html
+playwright-report/trace/playwright-logo.svg
+playwright-report/trace/index.html
+playwright-report/trace/index.CG3BNeDq.js
+playwright-report/trace/index.CFOW-Ezb.css
+playwright-report/trace/defaultSettingsView.NYBT19Ch.css
+playwright-report/trace/codicon.DCmgc-ay.ttf
+playwright-report/trace/assets/defaultSettingsView-Ds-bson8.js
+test-results/.last-run.json
+test-results/example-Example-Test-with-Navigate-navigate-To-Shop-chromium/error-context.md
+test-results/example-Example-Test-with-Navigate-navigate-To-Shop-chromium/trace.zip
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+e2e/example.spec.ts
+tests-examples/demo-todo-app.spec.ts
+package-lock.json
+package.json
+playwright.config.ts
