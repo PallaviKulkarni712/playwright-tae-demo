@@ -62,7 +62,7 @@ jobs:
       run: npx playwright install
 
     - name: Run Playwright tests
-      run: npm run test:ci -- registration.spec.ts
+      run: npm run test -- registration.spec.ts
 
     - name: Generate Allure Report
       if: ${{ !cancelled() }}
