@@ -1,34 +1,47 @@
 {
-  "name": "playwright-tae-demo",
+  "name": "pw-date",
   "version": "1.0.0",
-  "description": "First Repository in Github",
   "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PallaviKulkarni712/playwright-tae-demo.git"
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "lint:report": "node -e \"const fs = require('fs'); const { execSync } = require('child_process'); if (!fs.existsSync('eslint-reports')) fs.mkdirSync('eslint-reports', { recursive: true }); try { execSync('eslint . --format html --output-file eslint-reports/eslint-report.html', { stdio: 'inherit' }); } catch(e) { console.log('ESLint report generated with', e.status, 'issues found'); }\"",
+    "type-check": "tsc --noEmit",
+    "allure:generate": "allure generate allure-results -o allure-report --clean",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results",
+    "test": "playwright test",
+    "test:ci": "cross-env ENV=ci playwright test",
+    "test:local": "cross-env ENV=local playwright test",
+    "test:dev": "cross-env ENV=dev playwright test",
+    "test:prod": "cross-env ENV=prod playwright test",
+    "analyze-tests": "ts-node utils/analyze-tests.ts",
+    "test-report": "npm run analyze-tests",
+    "test-table": "ts-node utils/generate-test-table.ts",
+    "generate-commands": "ts-node utils/test-command-generator.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PallaviKulkarni712/playwright-tae-demo/issues"
-  },
-  "homepage": "https://github.com/PallaviKulkarni712/playwright-tae-demo#readme",
+  "description": "",
   "devDependencies": {
-    "@eslint/css": "^0.10.0",
-    "@eslint/js": "^9.31.0",
-    "@eslint/json": "^0.13.0",
-    "@eslint/markdown": "^7.0.0",
-    "@playwright/test": "^1.54.1",
-    "@types/node": "^24.0.14",
-    "allure-commandline": "^2.34.1",
-    "allure-playwright": "^3.3.2",
-    "eslint": "^9.31.0",
-    "eslint-plugin-react": "^7.37.5",
-    "globals": "^16.3.0"
-  },
-  "dependencies": {
-    "@faker-js/faker": "^9.9.0"
+    "@eslint/js": "^9.16.0",
+    "@faker-js/faker": "^9.3.0",
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "allure-commandline": "^2.32.0",
+    "allure-playwright": "^3.0.7",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.6.1",
+    "eslint": "^9.16.0",
+    "eslint-plugin-playwright": "^2.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.13.0",
+    "playwright": "^1.49.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.0"
   }
 }
