@@ -19,4 +19,11 @@ test('Open Cooffeeshop page and verify title is same --todays test', async ({ pa
     await expect(page).toHaveTitle('coffeeshop');
 });
 
+
+test('Open Cooffeeshop page and verify error', async ({ page }) => {
+    //Open URL
+    await page.goto('https://marina-abr.github.io/StaticCoffee/index.html');
+   //verify the title of the page  
+    await expect(page).toHaveTitle('coffeeshop12345');
+});
 });
