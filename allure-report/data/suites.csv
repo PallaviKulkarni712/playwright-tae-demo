@@ -1,0 +1,3 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3804","click to get started button using css selector","chromium","Mon Jul 21 15:48:02 CEST 2025","passed","Mon Jul 21 15:48:06 CEST 2025","Home","home.spec.ts","",""
+"","1525","Open Cooffeeshop page and verify title is same --todays test","chromium","Tue Jul 22 09:20:03 CEST 2025","passed","Tue Jul 22 09:20:05 CEST 2025","Registrierungsprozess","registration.spec.ts","",""
